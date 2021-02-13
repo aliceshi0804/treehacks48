@@ -1,0 +1,57 @@
+body {
+    background-color: #cdd0cb;
+}
+
+#logo {
+    position: absolute;
+    left: 10%;
+    margin: 10px;
+}
+
+#logo img{
+    display: inline-block;
+    height: 40px;
+}
+
+#logo p {
+    display: inline-block;
+    font-family: 'NTR', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+#content {
+    position: absolute;
+    top: 150px;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    background-color: #E8EAE6;
+    border-radius: 10px;
+}
+
+#content .study_room {
+    float: left;
+    width: 30%;
+    height: 100%;
+    border-right: 3px solid #CDD0CB;
+}
+
+.study_room p {
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+#content .todo_container {
+    float: left;
+    height: 100%;
+}
+
+.todo_container p {
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
