@@ -7,6 +7,37 @@ const filterOption = document.querySelector('.filter_todo');
 todoButton.addEventListener("click", addTodo)
 todoList.addEventListener("click", deleteCheck)
 filterOption.addEventListener("click", filterTodo)
+/*
+  #####  ####### #     # ######  #     #         ######  ####### ####### #     # 
+ #     #    #    #     # #     #  #   #          #     # #     # #     # ##   ## 
+ #          #    #     # #     #   # #           #     # #     # #     # # # # # 
+  #####     #    #     # #     #    #            ######  #     # #     # #  #  # 
+       #    #    #     # #     #    #            #   #   #     # #     # #     # 
+ #     #    #    #     # #     #    #            #    #  #     # #     # #     # 
+  #####     #     #####  ######     #            #     # ####### ####### #     # 
+                                         #######                                 
+*/
+function JOIN_ROOM() {
+    AFTER_JOIN_INTERFACE();
+}
+
+function LOGIN(e) {
+    if (e.code === "Enter") {
+        AFTER_LOGIN_INTERFACE();
+        console.log($("#nickname").val());
+    }
+}
+
+/*
+ ####### #######         ######  ####### 
+    #    #     #         #     # #     # 
+    #    #     #         #     # #     # 
+    #    #     #         #     # #     # 
+    #    #     #         #     # #     # 
+    #    #     #         #     # #     # 
+    #    #######         ######  ####### 
+                 #######                 
+*/
 //functions
 
 function addTodo(event) {

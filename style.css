@@ -21,6 +21,10 @@ body {
     font-size: 40px;
 }
 
+.hiddenAtLanding {
+    display: none;
+}
+
 #content {
     position: absolute;
     top: 150px;
@@ -30,6 +34,17 @@ body {
     background-color: #E8EAE6;
     border-radius: 10px;
 }
+
+/*
+  #####  ####### #     # ######  #     #         ######  ####### ####### #     # 
+ #     #    #    #     # #     #  #   #          #     # #     # #     # ##   ## 
+ #          #    #     # #     #   # #           #     # #     # #     # # # # # 
+  #####     #    #     # #     #    #            ######  #     # #     # #  #  # 
+       #    #    #     # #     #    #            #   #   #     # #     # #     # 
+ #     #    #    #     # #     #    #            #    #  #     # #     # #     # 
+  #####     #     #####  ######     #            #     # ####### ####### #     # 
+                                         #######                                 
+*/
 
 #content .study_room {
     float: left;
@@ -44,9 +59,89 @@ body {
     font-size: 18px;
 }
 
+.study_room #intro {
+    position: relative;
+    margin: auto;
+    margin-top: 150px;
+    width: 80%;
+    text-align: center;
+}
+
+.study_room #joinBut {
+    position: relative;
+    top: 50px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #7C9473;
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    color: #FFFFFF;
+}
+
+.study_room #joinBut:hover {
+    cursor: pointer;
+    background: #63765C;
+    box-shadow: 1px 2px 2px rgb(0 0 0 / 25%);
+}
+/*
+.study_room #joinBut:active {
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+*/
+.study_room #login {
+    position: relative;
+    text-align: center;
+}
+
+.study_room #login label {
+    position: relative;
+    display: block;
+    top: 20px;
+    bottom: 10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.study_room #login input {
+    position: relative;
+    top: 20px;
+    width: 80%;
+    font-family: Open Sans;
+    font-style: normal;
+    font-size: 16px;
+    background: #F2F2F2;
+    border: 2px solid #CDD0CB;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+
+/*
+ ####### #######         ######  ####### 
+    #    #     #         #     # #     # 
+    #    #     #         #     # #     # 
+    #    #     #         #     # #     # 
+    #    #     #         #     # #     # 
+    #    #     #         #     # #     # 
+    #    #######         ######  ####### 
+                 #######                 
+*/
+
 #content .todo_container {
     float: left;
     height: 100%;
+    padding: 20px;
 }
 
 .todo_container p {

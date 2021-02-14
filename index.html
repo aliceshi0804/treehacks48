@@ -7,6 +7,7 @@
         <link rel ="shortcut icon" href="Cactus_Emoji_grande.png">
         <link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=NTR&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
         <link rel="stylesheet" href="./style.css">
         
         <!--
@@ -26,9 +27,18 @@
         <div id="content">
             <div class="study_room">
                 <!--ADD TEXT AND BUTTON-->
-                <p>heyhey</p>
+                <p id="intro">Wanna find a study buddy and check out how’s everyone doing with their tasks?</p>
+                <button id="joinBut" onclick="JOIN_ROOM()">Join the Study Room!</button>
+                <div class="hiddenAtLanding" id="login">
+                    <label>Enter a nickname:</label><br>
+                    <input type="text" onkeyup="LOGIN(event)" id="nickname">
+                </div>
+                <div class="hiddenAtLanding" id="room">
+                <p>You just joined the room!</p>
+                </div>
             </div>
             <div class="todo_container">
+                <p>My Tasks for Today:</p>
                 <!-- INPUT FIELD TO ENTER TASK AND DROPDOWN FILTER -->
                 <!--
                     <form>
@@ -46,14 +56,16 @@
                     </form>
                 -->
                 <!-- CONTAINER FOR DISPLAYING TO-DO LIST BY ADDING TASKS DYNAMICALLY USING JAVASCRIPT -->
-                    <ul class="todo_list"></ul>
-                <p>haha</p>
+                    
+                    <ul class="todo_list">
+
+                    </ul>
             </div>
         </div>
         
     
-    <!-- ADDING JAVA SCRIPT -->
-    <script src="./main.js"></script>
+        <!-- ADDING JAVA SCRIPT -->
+        <script src="./interface.js"></script>
+        <script src="./main.js"></script>
     </body>
-
 </html>
