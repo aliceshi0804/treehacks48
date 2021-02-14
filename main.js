@@ -1,5 +1,5 @@
 const socket = io('http://localhost:3000');
-const messageContainer = document.getElementyId('room');
+const messageContainer = document.getElementById('room');
 var name = '';
 //selectors
 const todoInput = document.querySelector('.todo_input');
