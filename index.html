@@ -12,6 +12,18 @@
         <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
         <script defer src="./interface.js"></script>
         <script defer src="./main.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+            />
+            <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+            />
         
         <!--
             <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -41,10 +53,45 @@
                 </div>
             </div>
             <div class="todo_container">
-                <p>My Tasks for Today:</p>
+
+                <div class="container">
+                    <header class="text-center text-dark my-4">
+                      <h1 class="mb-4">My Tasks for Today:</h1>
+                     
+                    </header>
+
+                <ul class="list-group todos mx-auto text-dark">
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      <span>finish reading book</span>
+                      <i class="far fa-trash-alt delete"></i>
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      <span>get a mothers day present</span>
+                      <i class="far fa-trash-alt delete"></i>
+                    </li>
+                    <li
+                      class="list-group-item d-flex justify-content-between align-items-center"
+                    >
+                      <span>complete 30min workout</span>
+                      <i class="far fa-trash-alt delete"></i>
+                    </li>
+                  </ul>
+            
+                  <form class="add text-center my-4">
+                    <label class="text-dark"
+                      >Add a new todo by typing and then pressing <kbd>enter</kbd> in the
+                      field below.</label
+                    >
+                    <input class="form-control m-auto" type="text" name="add" />
+                  </form>
+                </div>
                 <!-- INPUT FIELD TO ENTER TASK AND DROPDOWN FILTER -->
-                <!--
-                    <form>
+                
+                  <!--  <form>
                         <input type="text" placeholder="Enter The Work" class="todo_input" />
                         <button class="todo_button" type="submit">
                             <i class="fas fa-plus-square"></i>
@@ -56,20 +103,15 @@
                                 <option value="uncompleted">Uncompleted</option>
                             </select>
                         </div>
-                    </form>
-                -->
+                    </form> -->
+                
                 <!-- CONTAINER FOR DISPLAYING TO-DO LIST BY ADDING TASKS DYNAMICALLY USING JAVASCRIPT -->
-                    
-                    <ul class="todo_list">
 
-                    </ul>
             </div>
         </div>
-        
-    
         <!-- ADDING JAVA SCRIPT -->
-        <!-- <script src="./interface.js"></script>
-        <script src="./main.js"></script> -->
+         <!--<script src="interface.js"></script>
+        <script src="main.js"></script> -->
         
     </body>
 </html>

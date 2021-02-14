@@ -11,4 +11,10 @@ io.on('connection', socket => {
     users[socket.id] = name
     socket.broadcast.emit('user-connected', name)
   })
+
+  socket.on('complete-task',() => {
+    socket.broadcast.emit('user-completed-task', users[socket.id])
+  })
 })
+
+
